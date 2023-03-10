@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(asset/Poppins-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(asset/Poppins-Bold.ttf) format(truetype);
+}
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+}
+.hero .left {
+  padding: 0px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background-color: black;
+  font-family: Poppins, sans-serif;
+}
+.hero .left .group-name {
+  font-family: PoppinsBold, "sans-serif";
+  line-height: 4rem;
+  font-size: 6rem;
+}
+.hero .left .group {
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 2rem;
+}
+.hero .left .group-portfolio {
+  margin-top: 10px;
+  font-weight: 200;
+  padding-left: 2px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+.hero .wave {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: translateY(150%);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 0px 100px;
+}
+
+.members {
+  height: 100%;
+  transform: translateY(200px);
+}
+.members .head {
+  text-align: center;
+  color: red;
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 2rem;
+}
+.members .divider {
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: lightgray;
+}
+.members .member1,
+.members .member2 {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.members .member1 .left-side,
+.members .member2 .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.members .member1 .left-side .name-about .name,
+.members .member2 .left-side .name-about .name {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: Poppins, "sans-serif";
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.members .member1 .left-side .name-about .name .name-line,
+.members .member2 .left-side .name-about .name .name-line {
+  inset: 0 0 0 0;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.members .member1 .left-side .name-about .about,
+.members .member2 .left-side .name-about .about {
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+}
+.members .member1 .left-side .contact .contact-head,
+.members .member2 .left-side .contact .contact-head {
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 1rem;
+}
+.members .member1 .left-side .contact .email,
+.members .member2 .left-side .contact .email {
+  text-decoration: none;
+  font-family: PoppinsBold, "sans-serif";
+  color: black;
+}
+.members .member1 .left-side .contact .btn-ctn,
+.members .member2 .left-side .contact .btn-ctn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.members .member1 .left-side .contact .btn-ctn a,
+.members .member2 .left-side .contact .btn-ctn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.members .member1 .left-side .contact .btn-ctn a img,
+.members .member2 .left-side .contact .btn-ctn a img {
+  transition: 300ms ease-in-out;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+.members .member1 .left-side .contact .btn-ctn a:hover img,
+.members .member2 .left-side .contact .btn-ctn a:hover img {
+  filter: invert(12%) sepia(95%) saturate(7275%) hue-rotate(359deg) brightness(96%) contrast(116%);
+}
+.members .member2 {
+  grid-template-columns: 60% 40%;
+}
+.members .member2 .left-side {
+  grid-column: 2;
+}
+
+.education .education-head {
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 1rem;
+}
+.education .college,
+.education .senior-high {
+  font-family: Poppins, sans-serif;
+}
+.education .college h1,
+.education .senior-high h1 {
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 1rem;
+}
+.education .college .educ-loc,
+.education .senior-high .educ-loc {
+  font-style: italic;
+}
+.education .college .educ-course,
+.education .senior-high .educ-course {
+  font-size: 1rem;
+}
+
+.skills,
+.hobbies {
+  font-family: Poppins, sans-serif;
+}
+.skills .skills-head,
+.skills .hobbies-head,
+.hobbies .skills-head,
+.hobbies .hobbies-head {
+  font-family: PoppinsBold, "sans-serif";
+  font-size: 1rem;
+}/*# sourceMappingURL=index.css.map */
